@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+.main {
+    background-color: #2b2b2b;
+    width: 100%;
+    height: fit-content;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.name-column-a {
+    width: 50%; 
+    height: 100vh; 
+    background-color: #2b2b2b; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-column-a h1 h2 h3 h4 p a {
+    color: #2b2b2b;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.name-column-b {
+    width: 50%; 
+    height: 100vh; 
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.name-column-b h1 h2 h3 h4 p a li {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type:none;
+}
+
+a {
+    color: whitesmoke;
+    font-size: 6vmin; font-family: 'Major Mono Display', monospace;
+    // font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 5vmin;
+    line-height: 1.5;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.selected{
+    text-decoration: underline;
+    color: #F2B138;
+}
+
+a:hover,
+a:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  transition: 1s;
+}
+
+.name-box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 19vmin;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.blob {
+  top: 10%;
+  position: absolute;
+  fill: #023F92;
+  width: 70%;
+  text-align: center;
+  left: 58%;
+  margin: 0 auto;
+  text-align:center;
+  max-width: 38vmax;
+}
+
+.year-box {
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2B138;
+    color: black;
+    text-align: center;
+}
+
+.photo-box {
+    height: 150px;
+    width: 150px;
+    background-color: #2b2b2b;
+    float: right;
+    margin-right: 1%;
+}
+.img-responsive {
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+}
+
+// .year-box {
+//     height: 150px;
+//     width: 150px;
+//     background-color: #2b2b2b;
+//     color: whitesmoke;
+//     vertical-align: bottom;
+// }
+
+@media (max-width: 1024px) {
+    .blob {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        text-align:center;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: white;
+        font-size: 17vmin;
+        line-height: 1;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-left: 40px;
+      }
+
+    .photo-box {
+        visibility: hidden;
+    }
+
+    .blob {
+        visibility: hidden;
+    }
+
+}
