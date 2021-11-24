@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LibraryComponent } from './library/library.component';
 import { HomeComponent } from './home/home.component';
 import { BusinessComponent } from './business/business.component';
+import { SlidesComponent } from './slides/slides.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BusinessComponent } from './business/business.component';
     AppComponent,
     LibraryComponent,
     HomeComponent,
-    BusinessComponent
+    BusinessComponent,
+    SlidesComponent
   ],
   imports: [
     BrowserModule,

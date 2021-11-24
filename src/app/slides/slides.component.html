@@ -1,0 +1,13 @@
+<div class="main">
+    <div class="navigation">
+        <button (click)="nextSlide()" style="top: 25%; color: black; float: right; margin-right: 20px; background-color: #F2B138;" mat-fab color="primary">
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+        <button (click)="backToHomepage()" class="selected-font" style="top: 30%; color: #F2B138; float: left; margin-left: 20px;" mat-button>Back</button>
+    </div>
+    <div class="frame">
+        <div style="width: 100%; padding: 12px; color: white;">
+            <p class="selected-font" >{{ selectedSlide.description }}</p><a class="selected-font" style="color: white;" href="">Source code</a>
+        <img class="img-responsive" [src]="selectedSlide.image">
+    </div>
+</div>
