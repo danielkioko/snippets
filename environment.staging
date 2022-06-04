@@ -1,0 +1,34 @@
+"build": {
+"production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ]
+            }
+}
+    
+
+"serve": {
+      "builder": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "browserTarget": "letsfarm-frontend:build"
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "letsfarm-frontend:build:production"
+        },
+        "staging": {
+          "browserTarget": "letsfarm-frontend:build:staging"
+        }
+      }
+    },
